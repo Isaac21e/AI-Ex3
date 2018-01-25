@@ -2,11 +2,16 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Created by Isaac on 1/25/2018.
+ * Represents a Parser class
+ * gets points as string an parses it to doubles.
  */
 public class Parser {
 
-
+	/***
+	 * gets points aas string an parses it to doubles
+	 * @param stringPoints strings to parse
+	 * @return points (doubles)
+	 */
 	public static List<Point> getPoints(String[] stringPoints){
 		List<Point> points= new LinkedList<>();
 		for (String str:stringPoints) {

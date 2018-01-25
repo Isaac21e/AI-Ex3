@@ -1,5 +1,5 @@
 /**
- *This class represents a point (x,y) in the space R^2
+ * This class represents a point (x,y) in the space R^2
  * it has a x value and a y value.
  */
 public class Point {
@@ -27,6 +27,11 @@ public class Point {
 		_numOfCluster=num;
 
 	}
+
+	/***
+	 * return num of cluster
+	 * @return num of cluster
+	 */
 	public int GetNumOfCluster(){
 		return _numOfCluster;
 
