@@ -11,8 +11,8 @@ public class Parser {
 		List<Point> points= new LinkedList<>();
 		for (String str:stringPoints) {
 			String[] split=str.split(",");
-			int x=Integer.parseInt(split[0]);
-			int y=Integer.parseInt(split[1]);
+			double x=Double.parseDouble(split[0]);
+			double y=Double.parseDouble(split[1]);
 			Point p= new Point(x,y);
 			points.add(p);
 		}

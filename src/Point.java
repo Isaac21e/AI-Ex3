@@ -4,10 +4,11 @@
  */
 public class Point {
 
-	private int _x;
-	private int _y;
+	private double _x;
+	private double _y;
+	private int _numOfCluster;
 
-	public Point(int x, int y){
+	public Point(double x, double y){
 		_x=x;
 		_y=y;
 	}
@@ -16,10 +17,18 @@ public class Point {
 	 * returns x
 	 * @return x
 	 */
-	public int GetX(){return _x;}
+	public double GetX(){return _x;}
 	/**
 	 * returns y
 	 * @return y
 	 */
-	public int GetY(){return _y;}
+	public double GetY(){return _y;}
+	public void SetNumOfCluster(int num){
+		_numOfCluster=num;
+
+	}
+	public int GetNumOfCluster(){
+		return _numOfCluster;
+
+	}
 }
