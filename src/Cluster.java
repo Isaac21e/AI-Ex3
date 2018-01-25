@@ -2,30 +2,44 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Created by Isaac on 1/25/2018.
+ * The cluster class.
+ * This class represents a cluster, that is, a group of points.
  */
 public class Cluster {
-
+	//members
 	private List<Point> _points;
-	//private static int index=1;
 	private int _index;
+
+	/**
+	 * Constructor
+	 * @param firstPoint gets the first point in cluster on initialization
+	 */
 	public Cluster(Point firstPoint){
 		_points =new LinkedList<>();
 		_points.add(firstPoint);
-		//_index=index;
-		//index++;
 	}
-	public void Add(Point p){
-		_points.add(p);
-	}
+
+	/**
+	 * sets index of cluster
+	 * @param index val
+	 */
 	public void SetIndex(int index){
 		_index=index;
 	}
 
+	/***
+	 * get point of cluster
+	 * @return points
+	 */
 	public List<Point> GetPoints(){
 		return _points;
 	}
-	public void updatePointsIndex(){
+
+	/***
+	 * updates all points to clusters index
+	 * the point class has a member- cluster's index
+	 */
+	public void UpdatePointsIndex(){
 		for(Point p: _points){
 			p.SetNumOfCluster(_index);
 		}
